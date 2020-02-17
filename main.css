@@ -1,0 +1,128 @@
+
+header {
+    height: 280px;
+    position: fixed;
+    width: 100%;
+}
+
+#spaceBehindHeader {
+    height: 280px;
+    width: 100%
+}
+
+
+#startPicture{
+    width:100%;
+    height: 200px;
+    background-size: contain;
+}
+
+.flex-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navigationDiv button {
+    width: 25%;
+    height:40px;
+}
+
+#leftBarConteiner {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background-color: grey;
+    padding-left: 10px;
+}
+
+.wholeMovieDiv {
+    display:flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    border: grey solid 0.5px;
+    border-radius: 4px;
+}
+
+.wholeMovieDiv:hover {
+    background-color: lightgray
+}
+
+.leftImgPart {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.leftRatePart span{
+    color: yellow;
+}
+
+.leftTitlePart{
+    width: 50%;
+}
+
+.leftIdPart{
+    width : 5%
+}
+
+.leftRatePart, .leftTitlePart, .leftIdPart{
+    padding-top: 12px;
+}
+
+.wholeMovieDiv div{
+    display: inline-block;
+    justify-content: space-around;
+}
+
+#rightDetailsConteiner {
+    display: flex;
+    width:75%;
+    justify-content: space-around;
+    background-color: rgb(211, 211, 211);
+}
+
+#imageConatiner {
+    display: inline-block;
+    height: 300px;
+    width: 13%;
+    background-position: 50% 50%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#detailsContainer {
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+div div {
+    margin-top: 2px;
+}
+
+#addOrEditMovieDiv{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    height: 40px;
+    margin: 10px;
+}
+
+#addOrEditMovieDiv button {
+    margin-left: 10px;;
+    border: solid grey 1px;
+    height: 39px;
+}
+
