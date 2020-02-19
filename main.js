@@ -134,6 +134,7 @@ function generateMovies() {
             })
                 .then(loadAllMovies)
                 .then(startWindow)
+                .catch(err => console.warn("nie działa, nie udało ponieważ wystapił błąd: ", err))
         });
 
         var leftEditButton = document.createElement("button");
@@ -250,7 +251,8 @@ function generateMovies() {
                     detailsRestOfMovie.innerText = "\n\n Rok produkcji: " + detailsOfMovie.year
                         + "\n Opis filmu: \n" + detailsOfMovie.description + "\n Obsada: " + detailsOfMovie.cast + "\n Gatunek: " + detailsOfMovie.genres
                         + "\n Ocena: " + detailsOfMovie.rate + "/6"
-                })
+                }).
+                catch(err => console.warn("nie działa, nie udało się ponieważ wystapił błąd: ", err))
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         });
 
@@ -269,6 +271,7 @@ function loadAllMovies() {
             getButtons = document.getElementsByClassName("delete-or-edit-button");
             changeAllDeleteButtonsVisibility("hidden");
         })
+        .catch(err => console.warn("nie działa, nie udało się ponieważ wystapił błąd: ", err))
 }
 
 // generowanie listy szukanych filmów:
@@ -280,6 +283,7 @@ function generateSerchedMovies() {
             console.log(listOfMovies);   // to bedzie można usunąć
             generateMovies();
         })
+        .catch(err => console.warn("nie działa, nie udało się ponieważ wystapił błąd: ", err))
 }
 
 // dodawanie elementu na serwer
