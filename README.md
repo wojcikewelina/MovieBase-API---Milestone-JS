@@ -2,7 +2,7 @@
 
 Movie Base
 
-#Description
+# Description
 
 Application which shows details about movie. API, Fetch. 
 Created during programming course | IT Fighters
